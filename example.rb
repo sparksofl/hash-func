@@ -1,8 +1,7 @@
 load 'my_hash.rb'
 
-FILES = ['source/pic.jpg', 'source/doc.docx', 'source/code.rb',
-         'source/pr.exe', 'source/BPtD.html']
-BITS = 4
+FILES = ['source/pic.jpg', 'source/doc.docx', 'source/code.rb', 'source/pr.exe']
+BITS = 8
 
 FILES.each do |file|
   puts '===================='
