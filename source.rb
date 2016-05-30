@@ -8,7 +8,7 @@ class MyHash
     @bits = bits * 2
   end
 
-  def digest(changed)
+  def digest(changed = false)
     bin = changed ? binary_changed : binary
     temp = (bin ^ 'FEE1DEAD'.unpack('B*')[0].to_i).to_s(2).scan(/../)
     result = []
