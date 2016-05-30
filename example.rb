@@ -1,10 +1,11 @@
-load 'source.rb'
+load 'my_hash.rb'
 
-FILES = ['sources/pic.png', 'sources/doc.odt', 'sources/code.rb']
+FILES = ['source/pic.jpg', 'source/doc.docx', 'source/code.rb',
+         'source/pr.exe', 'source/BPtD.html']
 BITS = 4
 
 FILES.each do |file|
-  puts "===================="
+  puts '===================='
   puts "File: #{file}"
   puts
 
