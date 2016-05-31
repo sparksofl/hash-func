@@ -5,7 +5,7 @@ class MyHash
 
   def initialize(file, bits)
     @file = file
-    @bits = bits
+    @bits = bits / 2
   end
 
   def digest(changed = false)
@@ -24,7 +24,7 @@ class MyHash
       end
       temp = result
       if temp.length > @bits && temp.length < @bits * 2
-        result = temp.first(@bits)
+        result = temp[2..5]
         break
       end
     end
