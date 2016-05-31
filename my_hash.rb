@@ -46,7 +46,6 @@ class MyHash
   def binary_changed
     s = File.binread(@file)
     bits = s.unpack("B*")[0]
-    bits[0] = bits[0] == 0 ? '1' : '0'
     bits[1] = bits[1] == 0 ? '1' : '0'
     bits.to_i
   end
